@@ -1,12 +1,12 @@
-const cartButton = document.querySelector("#cart-button");
+new WOW().init();
+
+const cardButton = document.querySelector("#card-button");
 const modal = document.querySelector(".modal");
 const close = document.querySelector(".close");
 
-cartButton.addEventListener("click", toggleModal);
+cardButton.addEventListener("click", toggleModal);
 close.addEventListener("click", toggleModal);
 
 function toggleModal() {
   modal.classList.toggle("is-open");
 }
-
-new WOW().init();
